@@ -1,6 +1,19 @@
-.autoContainer {
-    width: 1440px;
-    margin: 0 30px;
+.autoContainer{
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 30px;
+  &--sm {
+    max-width: 1100px;
+  }
+  &--md{
+    max-width: 1170px;
+    padding: 0;
+    width: 100%;
+  }
+  &--lg {
+    max-width: 1440px;
+    margin: 0;
+  }
 }
 
 .button{

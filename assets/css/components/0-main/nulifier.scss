@@ -17,6 +17,7 @@ html {
   border: none;
   outline: none;
   font-family: "Inter", sans-serif;
+  box-sizing: border-box;
 }
 button {
   cursor: pointer;
@@ -59,7 +60,6 @@ input::-webkit-inner-spin-button {
       Global Settings
   ====================================================================
    ***/
-//  font-family: 'Merriweather', serif;
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;

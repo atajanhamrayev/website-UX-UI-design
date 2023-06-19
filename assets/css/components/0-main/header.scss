@@ -1,22 +1,17 @@
 .header{
-    margin: 30px  auto 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 2em;
     &__inner{
-        width: 86%;
-        margin: 0 auto;
-        padding: 9px 35px;
+        padding: 0.5em 2.18em;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
+        justify-content: space-between;
         column-gap:  6.45%;
         box-shadow: 0px 6px 20px rgba($secondary, 0.08);
         border-radius: 12px;
+        background-color: $white;
 
         &-logo{
-            width: 108px;
+            width: 6.75em;
 
             & img{
                 width: 100%;
@@ -25,12 +20,30 @@
         }
         &-navigation{
             display: flex;
-            flex-direction: row;
             width: 70%;
-            flex-direction: row;
             align-items: center;
-            flex-wrap: wrap;
-            column-gap: 4.9%;
+            justify-content: space-between;
+
+
+            .burger {
+                display: none;
+                padding: 0.5rem;
+              }
+              .line {
+                height: 2px;
+                width: 25px;
+                margin: 5px auto;
+                background: $main;
+                opacity: 0.8;
+                transition: all 0.3s ease-in-out;
+              }
+        }
+
+        &-nav-links{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2em;
         }
         &-nav-item{
             cursor: pointer;
@@ -54,14 +67,14 @@
             }
         }
 
+
         &-lang{
             font-weight: 400;
-            line-height: 19px;
             letter-spacing: 0em;
-            text-align: left;
+            text-align: center;
 
             &-changer{
-                width: 87px;
+                display: flex;
                 column-gap: 8px;
             }
 
@@ -124,5 +137,15 @@
 
         }
     }
+
+    &__title{
+        text-align: center;
+        color: $white;
+        padding: 2.33em 0;
+    }
+}
+
+.bg-color{
+    background-color: $secondary;
 }
 

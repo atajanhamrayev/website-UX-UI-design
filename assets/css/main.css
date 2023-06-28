@@ -1816,6 +1816,10 @@ p_sm {
   .scroll__inner-tabs {
     width: 260px;
   }
+  .scroll__inner-content {
+    width: calc(100% - 300px);
+    gap: 20px;
+  }
   .scrollContent__header {
     margin-bottom: 20px;
     gap: 12px;
@@ -2033,6 +2037,9 @@ p_sm {
   .scroll__inner-tabs {
     width: 245px;
   }
+  .scroll__inner-content {
+    width: calc(100% - 280px);
+  }
   .scrollContent__header {
     margin-bottom: 18px;
     gap: 10px;
@@ -2202,6 +2209,10 @@ p_sm {
   .scroll__inner-tabs a {
     padding: 9px 11px;
   }
+  .scroll__inner-content {
+    width: calc(100% - 260px);
+    gap: 15px;
+  }
   .scrollContent__header {
     margin-bottom: 15px;
     gap: 6px;
@@ -2297,6 +2308,11 @@ p_sm {
   }
   .scroll__inner-tabs a {
     padding: 9px 11px;
+  }
+  .scroll__inner-content {
+    width: 100%;
+    padding-left: 0;
+    gap: 20px;
   }
   .scrollContent__header {
     margin-bottom: 15px;
@@ -2546,6 +2562,10 @@ p_sm {
   }
   .scroll__inner {
     gap: 20px;
+  }
+  .scroll__inner-content {
+    width: 100%;
+    gap: 15px;
   }
   .scrollContent__header {
     margin-bottom: 10px;

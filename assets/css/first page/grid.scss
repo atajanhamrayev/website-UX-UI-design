@@ -32,6 +32,10 @@
             align-items: center;
             justify-content: flex-end;
         }
+
+        &:hover{
+            box-shadow: 0px 12px 24px 40px rgba(16, 24, 40, 0.08);
+        }
     }
 
     .button--icon {

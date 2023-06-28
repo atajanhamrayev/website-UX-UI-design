@@ -1,0 +1,17 @@
+.scroll {
+  padding: 100px 0;
+}
+.scroll__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.scroll__inner-tabs {
+  position: sticky;
+  top: 100px;
+  width: 270px;
+  padding: 16px;
+}

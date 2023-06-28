@@ -1,0 +1,129 @@
+.whyUs{
+    background: $bg-color;
+    padding: 120px 0;
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        &-banner{
+            width: calc(100% - 500px);
+            max-width: 500px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &-content{
+            width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            font-weight: 500;
+
+            h2{
+                font-weight: 700;
+                line-height: 1.2;
+                columns: $black;
+            }
+        }
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        &-item{
+            position: relative;
+            font-size: 24px;
+            padding-left: 3em;
+
+            &-icon{
+                position: absolute;
+                left: 0;
+                width: 2em;
+                height: 2em;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            p{
+                margin-top: .5em;
+            }
+        }
+    }
+}
+
+
+//max-width: 1160px
+@mixin whyUs-xxl {
+  .whyUs{
+    padding: 100px 0;
+
+    &__inner{
+
+        &-content{
+            margin: 0;
+        }
+    }
+    &__list{
+        gap: 20px;
+
+        &-item{
+            font-size: 20px;
+        }
+    }
+  }
+}
+//max-width: 1025px
+@mixin whyUs-xl {
+  .whyUs{
+    padding: 80px 0;
+  }
+}
+//max-width: 940px
+@mixin whyUs-lg {
+  .whyUs{
+    padding: 60px 0;
+
+    &__inner{
+        flex-direction: column-reverse;
+
+        &-banner{
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        &-content{
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+  }
+}
+//max-width: 560px
+@mixin whyUs-sm {
+  .whyUs__list{
+    gap: 16px;
+
+    &-item{
+        font-size: 18px;
+
+        h4{
+            font-size: 18px;
+        }
+    }
+  }
+}

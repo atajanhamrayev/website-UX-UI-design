@@ -1,0 +1,21 @@
+.heroTitle{
+    background-color: $secondary;
+    margin: 0 !important;
+
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50vh;
+        padding: 130px 0 60px 0;
+        color: $white;
+        text-align: center;
+    }
+}
+
+//max-width: 1160px
+@mixin performance-xxl{
+    .heroTitle__inner{
+        padding: 110px 0 40px 0;
+    }
+}

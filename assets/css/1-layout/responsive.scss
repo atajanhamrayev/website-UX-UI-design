@@ -1,0 +1,90 @@
+//max-width: 1280px
+@media (max-width: 1280px) {
+    @include typography-xxxl;
+}
+
+//max-width: 1160px
+@media (max-width: 1160px) {
+    @include typography-xxl;
+    @include components-xxl;
+    @include header-xxl;
+    @include hero-xxl;
+    @include whyUs-xxl;
+    @include grid-xxl;
+    @include feedbacks-xxl;
+    @include performance-xxl;
+    @include map-xxl;
+}
+
+//max-width: 1025px
+@media (max-width: 1025px) {
+    @include body-xl;
+    @include typography-xl;
+    @include components-xl;
+    @include header-xl;
+    @include footer-xl;
+    @include hero-xl;
+    @include whyUs-xl;
+    @include grid-xl;
+    @include feedbacks-xl;
+    @include overview-xl;
+    @include scroll-xl;
+}
+
+//max-width: 940px
+@media (max-width: 940px) {
+    @include typography-lg;
+    @include components-lg;
+    @include footer-lg;
+    @include hero-lg;
+    @include whyUs-lg;
+    @include grid-lg;
+    @include feedbacks-lg;
+    @include overview-lg;
+    @include roadmap-lg;
+    @include map-lg;
+    @include scroll-lg;
+}
+
+//max-width: 768px
+@media (max-width: 768px) {
+    @include body-md;
+    @include typography-md;
+    @include components-md;
+    @include header-md;
+    @include hero-md;
+    @include grid-md;
+    @include feedbacks-md;
+    @include roadmap-md;
+    @include map-md;
+    @include scroll-md;
+}
+
+//max-width: 660px
+@media (max-width: 660px) {
+    @include components-xmd;
+    @include grid-xmd;
+    @include overview-xmd;
+    @include scroll-xmd;
+}
+
+//max-width: 560px
+@media (max-width: 560px) {
+    @include typography-sm;
+    @include header-sm;
+    @include footer-sm;
+    @include whyUs-sm;
+    @include grid-sm;
+    @include overview-sm;
+    @include roadmap-sm;
+    @include map-sm;
+}
+
+//max-width: 460px
+@media (max-width: 460px) {
+    @include typography-xsm;
+    @include grid-xsm;
+    @include overview-xsm;
+    @include roadmap-xsm;
+    @include scroll-xsm;
+}

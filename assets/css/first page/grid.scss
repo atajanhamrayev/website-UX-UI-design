@@ -1,0 +1,909 @@
+.grid__inner {
+    h2 {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    &-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 48px 30px;
+    }
+}
+
+.gridItem {
+    width: calc(33.3% - 20px);
+    max-width: 358px;
+
+    &__image {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+        &-social {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+
+    .button--icon {
+        margin-right: 22px;
+        width: 16px;
+        height: 16px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .ratioImage {
+        padding-bottom: 104%;
+    }
+
+    h4 {
+        margin-bottom: 4px;
+    }
+
+    p {
+        color: $black-2;
+    }
+}
+
+.grid--service {
+    padding: 120px 0;
+
+    .gridItem {
+        padding: 36px 20px;
+        box-shadow: 0px 2px 8px rgba(16, 24, 40, 0.06);
+        border-radius: 8px;
+        background: $white-3;
+        transition: all .2s ease-in-out 0s;
+        cursor: pointer;
+
+        &__image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 48px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &__info {
+            flex-direction: column;
+            text-align: center;
+            gap: 16px;
+            justify-content: space-between;
+
+            p {
+                max-width: 280px;
+                margin: 0 auto;
+            }
+        }
+
+        &:hover {
+            box-shadow: 0px 12px 24px rgba(16, 24, 40, 0.08);
+        }
+    }
+}
+
+.grid--invest {
+    background: $bg-color;
+
+    .grid__inner {
+        padding: 120px 0 85px;
+        max-width: 1096px;
+        margin: 0 auto;
+    }
+
+    .gridItem {
+        background-color: $white;
+        padding: 32px;
+        box-shadow: 0px 2px 8px rgba(16, 24, 40, 0.06);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        h4 {
+            margin-bottom: 16px;
+        }
+
+        p {
+            margin-bottom: 24px;
+            flex: 1;
+            line-height: 1.65em;
+            max-width: 270px;
+        }
+    }
+}
+
+.grid--team {
+    padding: 120px 0;
+
+    .grid__inner-row {
+        max-width: 1135px;
+        margin: 0 auto;
+        justify-content: flex-start;
+    }
+}
+
+.grid--achievement {
+    background-color: $bg-color;
+
+    .grid__inner {
+        padding: 155px 0 85px;
+
+        &-header {
+            max-width: 570px;
+            margin: 0 auto 60px;
+            text-align: center;
+
+            h2 {
+                margin-bottom: 16px;
+            }
+
+            p {
+                color: $black-2;
+            }
+        }
+
+        &-row {
+            gap: 20px;
+        }
+    }
+
+    .gridItem {
+        width: calc(33.3% - 15px);
+        padding: 23px 30px;
+        background-color: $white;
+        text-align: center;
+        box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.04);
+        border-radius: 8px;
+
+        h3 {
+            color: $secondary;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        p {
+            color: $black-2;
+        }
+    }
+}
+
+.grid--selection {
+    background-color: $white-6;
+    padding: 120px 0;
+
+    .grid {
+        &__inner {
+            h3 {
+                color: $secondary;
+                margin-bottom: 52px;
+
+            }
+
+            &-row {
+                gap: 30px;
+                justify-content: flex-start;
+            }
+        }
+
+        &Item {
+            width: calc(33.3% - 20px);
+            box-shadow: 0px 2px 4px rgba(16, 24, 40, 0.04);
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: $white;
+            transition: all 0.2s ease-in-out 0s;
+            cursor: pointer;
+            max-width: 370px;
+
+            &__image {
+                margin-bottom: 0;
+
+                .ratioImage {
+                    padding-bottom: 76.5%;
+                }
+            }
+
+            &__info {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                padding: 25px;
+                gap: 0;
+
+                &-row {
+                    width: 100%;
+                    max-width: 290px;
+                    margin-top: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 10px;
+
+                    p {
+                        max-width: 150px;
+
+                        strong {
+                            display: block;
+                            margin-right: unset !important;
+                        }
+                    }
+                }
+            }
+
+            h4 {
+                margin-bottom: 8px;
+            }
+
+            p {
+                strong {
+                    color: $black;
+                    font-weight: 500;
+                    margin-right: 0.5em;
+                }
+            }
+        }
+    }
+}
+
+//max-width: 1160px
+@mixin grid-xxl {
+    .grid--service {
+        padding: 100px 0;
+
+        .grid__inner-row {
+            gap: 30px;
+        }
+
+        .gridItem {
+            width: calc(33.3% - 20px);
+
+            &__image {
+                margin-bottom: 38px;
+                width: 65px;
+                height: 65px;
+            }
+
+            &__info {
+                gap: 12px;
+            }
+        }
+    }
+
+    .grid--invest {
+        .grid__inner {
+            padding: 100px 0 80px;
+        }
+    }
+
+    .grid--achievement {
+        .grid {
+            &__inner {
+                padding: 140px 0 80px;
+
+                &-row {
+                    gap: 30px 20px;
+                }
+            }
+        }
+    }
+
+    .grid__inner {
+        h2 {
+            margin-bottom: 50px;
+        }
+
+        &-row {
+            gap: 40px 30px;
+            justify-content: space-evenly;
+        }
+    }
+
+    .gridItem {
+        width: calc(33.3% - 20px);
+    }
+
+    .grid {
+        h4 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .grid--team {
+        padding: 100px 0;
+    }
+
+    .grid--selection{
+        padding: 100px 0;
+
+        .grid{
+            &__inner{
+                h3{
+                    margin-bottom: 45px;
+                }
+
+                &-row{
+                    gap: 25px;
+                }
+            }
+
+            &Item{
+                width: calc(33.3% - 18px);
+
+                &__info{
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+
+//max-width: 1025px
+@mixin grid-xl {
+    .grid--service {
+        padding: 80px 0;
+
+        .grid__inner-row {
+            gap: 25px;
+        }
+
+        .gridItem {
+            width: calc(33.3% - 17px);
+
+            &__image {
+                margin-bottom: 30px;
+                width: 60px;
+                height: 60px;
+            }
+
+            &__info {
+                gap: 10px;
+            }
+        }
+    }
+
+    .grid--invest {
+        .grid__inner {
+            padding: 90px 0 70px;
+        }
+
+        .gridItem {
+            padding: 27px;
+        }
+    }
+
+    .grid--achievement {
+        .grid {
+            &__inner {
+                padding: 120px 0 70px;
+
+                &-header {
+                    margin-bottom: 50px;
+
+                    h2 {
+                        margin-bottom: 12px;
+                    }
+                }
+
+                &-row {
+                    gap: 30px 20px;
+                }
+            }
+        }
+    }
+
+    .grid__inner {
+        h2 {
+            margin-bottom: 45px;
+        }
+
+        &-row {
+            gap: 35px 25px;
+        }
+    }
+
+    .gridItem {
+        width: calc(33.3% - 18px);
+    }
+
+    .grid {
+        h4 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .grid--team {
+        padding: 80px 0;
+    }
+    .grid--selection{
+        padding: 80px 0;
+
+        .grid{
+            &__inner{
+                h3{
+                    margin-bottom: 40px;
+                }
+
+                &-row{
+                    gap: 25px 15px;
+                }
+            }
+
+            &Item{
+                width: calc(33.3% - 10px);
+
+                &__info{
+                    padding: 20px;
+
+                    h4{
+                        margin-bottom: 5px;
+                    }
+                }
+
+                &-row{
+                    margin-top: 12px;
+                    max-width: 315px;
+                }
+            }
+        }
+    }
+}
+
+//max-width: 940px
+@mixin grid-lg {
+    .grid--service {
+        padding: 70px 0;
+
+        .grid__inner-row {
+            gap: 10px;
+        }
+
+        .gridItem {
+            padding: 30px 15px;
+            width: calc(33.3% - 7px);
+
+            &__image {
+                margin-bottom: 25px;
+                width: 55px;
+                height: 55px;
+            }
+
+            &__info {
+                gap: 8px;
+            }
+        }
+    }
+
+    .grid--achievement {
+        .grid {
+            &__inner {
+                padding: 100px 0 60px;
+
+                &-header {
+                    margin-bottom: 40px;
+                    max-width: 530px;
+                }
+
+                &-row {
+                    gap: 10px;
+                }
+            }
+
+            &Item {
+                padding: 20px 10px;
+
+                h3 {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    .grid--invest {
+        .grid__inner {
+            padding: 70px 0 50px;
+
+            &-row {
+                gap: 10px;
+            }
+        }
+
+        .gridItem {
+            padding: 25px 20px;
+            width: calc(33.3% - 7px);
+        }
+    }
+
+    .grid__inner {
+        h2 {
+            margin-bottom: 35px;
+        }
+
+        &-row {
+            gap: 25px 15px;
+        }
+    }
+
+    .gridItem {
+        width: calc(33.3% - 10px);
+    }
+
+    .grid {
+        h4 {
+            font-size: 18px;
+        }
+    }
+
+    .grid--team {
+        padding: 60px 0;
+    }
+
+    .grid--selection{
+        .grid{
+            &__inner{
+                h3{
+                    margin-bottom: 35px;
+                }
+
+                &-row{
+                    gap: 25px 20px;
+                }
+            }
+
+            &Item{
+                width: calc(50% - 15px);
+                max-width: unset;
+            }
+        }
+    }
+}
+
+//max-width: 768px
+@mixin grid-md {
+    .grid--service {
+        padding: 60px 0;
+
+        .grid__inner-row {
+            gap: 25px 20px;
+        }
+
+        .gridItem {
+            padding: 40px 30px;
+            width: calc(50% - 15px);
+
+            &__info {
+                max-width: 245px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .grid--invest {
+        .grid__inner-row {
+            gap: 25px 15px;
+        }
+
+        .gridItem {
+            width: calc(50% - 15px);
+
+            h4 {
+                margin-bottom: 12px;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .grid--achievement {
+        .grid {
+            &__inner {
+                padding: 80px 0 50px;
+
+                &-header {
+                    margin-bottom: 30px;
+
+                    h2 {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                &-row {
+                    gap: 25px 15px;
+                }
+            }
+
+            &Item {
+                width: calc(50% - 15px);
+                max-width: unset;
+            }
+        }
+    }
+
+    .grid__inner-row {
+        gap: 20px;
+    }
+
+    .gridItem {
+        width: calc(50% - 15px);
+
+        &__image {
+            margin-bottom: 20px;
+        }
+    }
+
+    .grid--team {
+        padding: 60px 0;
+
+        .grid__inner-row {
+            justify-content: flex-start;
+        }
+    }
+
+    .grid--selection{
+        padding: 60px 0;
+
+        .grid{
+            &__inner{
+                h3{
+                    margin-bottom: 30px;
+                }
+
+                &-row{
+                    gap: 25px 15px;
+                }
+            }
+            &Item{
+                width: calc(50% - 10px);
+            }
+        }
+    }
+}
+
+//max-width: 660px
+@mixin grid-xmd {
+    .grid--service {
+        padding: 50px 0;
+
+        .grid__inner-row {
+            gap: 20px 15px;
+        }
+
+        .gridItem {
+            padding: 30px 15px;
+            width: calc(50% - 10px);
+
+            &__image {
+                margin-bottom: 20px;
+                width: 50px;
+                height: 50px;
+            }
+
+            &__info {
+                gap: 8px;
+            }
+        }
+    }
+
+    .grid--invest {
+        .grid__inner {
+            padding: 60px 0 45px;
+
+            &-row {
+                gap: 20px 10px;
+            }
+        }
+
+        .gridItem {
+            padding: 20px;
+            width: calc(50% - 10px);
+        }
+    }
+
+    .grid--achievement {
+        .grid {
+            &__inner {
+                padding: 70px 0 50px;
+
+            }
+        }
+    }
+
+    .grid__inner-row {
+        gap: 20px 15px;
+    }
+
+    .gridItem {
+        width: calc(50% - 10px);
+        max-width: unset;
+    }
+
+    .grid--team {
+        padding: 50px 0;
+    }
+
+    .grid--selection{
+        .grid{
+            &__inner{
+                &-row{
+                    gap: 20px 10px;
+                }
+            }
+            &Item{
+                width: calc(50% - 5px);
+
+                &__info{
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+//max-width: 560px
+@mixin grid-sm {
+    .grid--service {
+        .grid__inner-row {
+            gap: 20px 10px;
+        }
+
+        .gridItem {
+            padding: 30px 15px;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+
+            &__info {
+                gap: 5px;
+            }
+        }
+    }
+
+    .grid--invest {
+        .grid__inner {
+            padding: 50px 0 40px;
+        }
+
+        .gridItem {
+            padding: 20px;
+            width: 100%;
+        }
+    }
+
+    .grid--achievement {
+        .grid {
+            &__inner {
+                padding: 50px 0 40px;
+
+                &-header {
+                    margin-bottom: 30px;
+
+                    h2 {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                &-row {
+                    gap: 20px 10px;
+                }
+            }
+
+            &Item {
+                width: calc(50% - 10px);
+                padding: 15px;
+            }
+        }
+    }
+
+    .grid__inner-row {
+        gap: 20px 10px;
+    }
+
+    .gridItem {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+
+        &__image {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+    }
+
+    .grid--selection{
+        .grid{
+            &__inner{
+                max-width: 450px;
+                margin: 0 auto;
+
+                h3{
+                    margin-bottom: 25px;
+                }
+
+                &-row{
+                    gap: 20px;
+                }
+            }
+
+            &Item{
+                width: 100%;
+
+                &__info{
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
+
+//max-width: 460px
+@mixin grid-xsm {
+
+    .grid--service {
+        .gridItem {
+            padding: 30px 15px;
+            width: 100%;
+            max-width: 350px;
+
+            &__info {
+                gap: 5px;
+            }
+        }
+    }
+
+    .grid__inner {
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        &-row {
+            gap: 20px;
+        }
+    }
+
+    .grid--achievement {
+        .grid__inner {
+            &-header {
+                margin-bottom: 20px;
+            }
+
+            &-row {
+                gap: 20px;
+            }
+        }
+
+        .gridItem {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,143 @@
+.autoContainer {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.logo {
+    display: flex;
+    font-size: 20px;
+    width: 5em;
+    height: 3.5em;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.ratioImage{
+    position: relative;
+    padding-bottom: 65%;
+    width: 100%;
+
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1.5em;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    color: $secondary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    transition: all .3s ease;
+
+    &--primary {
+        background-color: $secondary;
+        border-color: $secondary;
+        color: $white;
+
+        &:hover{
+            color: $secondary;
+            background: $white;
+        }
+    }
+
+    &--icon{
+        position: relative;
+        width: 1.3em;
+        height: 1.3em;
+        padding: 0;
+
+        &.smIcon{
+            width: 1em;
+            height: 1em;
+        }
+
+        &:hover::after{
+            opacity: .2;
+            transform: scale(1.6);
+        }
+
+        &::after{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: currentColor;
+            border-radius: 50%;
+            opacity: 0;
+            transition: .2s ease-out;
+        }
+    }
+}
+
+.header + section {
+    margin-top: 120px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+//max-width: 1160px
+@mixin components-xxl{
+    .autoContainer{
+        padding: 0 40px;
+    }
+    .header + section {
+        margin-top: 105px;
+    }
+}
+//max-width: 1025px
+@mixin components-xl{
+    .autoContainer{
+        padding: 0 30px;
+    }
+    .button{
+        font-size: 14px;
+    }
+    .header + section {
+        margin-top: 100px;
+    }
+}
+//max-width: 940px
+@mixin components-lg{
+    .autoContainer{
+        padding: 0 25px;
+    }
+}
+//max-width: 768px
+@mixin components-md{
+    .autoContainer{
+        padding: 0 15px;
+    }
+    .header + section {
+        margin-top: 90px;
+    }
+}
+//max-width: 660px
+@mixin components-xmd{
+    .button{
+        font-size: 12px;
+    }
+}

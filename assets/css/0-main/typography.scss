@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+h1{
+    font-weight: 700;
+    line-height: 1.15;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+/* Typography */
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 48px;
+
+  &._sm{
+    font-size: 40px;
+  }
+}
+h3 {
+  font-size: 32px;
+}
+h4 {
+  font-size: 24px;
+  &_sm{
+    font-size: 22px;
+  }
+}
+h5 {
+  font-size: 22px;
+}
+h6 {
+  font-size: 18px;
+}
+p {
+  font-size: 16px;
+  line-height: 1.6;
+
+  &._lg{
+    font-size: 18px;
+  }
+  &_sm{
+    font-size: 14px;
+  }
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+
+//max-width: 1280px
+@mixin typography-xxxl {
+  h1 {
+    font-size: 52px;
+  }
+  h2 {
+    font-size: 45px;
+    &._sm{
+      font-size: 38px;
+    }
+  }
+}
+//max-width: 1160px
+@mixin typography-xxl {
+  h1 {
+    font-size: 46px;
+  }
+  h2{
+    &._sm{
+      font-size: 38px;
+    }
+  }
+}
+//max-width: 1025px
+@mixin typography-xl {
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 40px;
+    &._sm{
+      font-size: 32px;
+    }
+  }
+  h3 {
+    font-size: 28px;
+  }
+}
+//max-width: 940px
+@mixin typography-lg {
+  h1 {
+    font-size: 38px;
+  }
+  
+  h4{
+    font-size: 22px;
+
+    &._sm{
+      font-size: 20px;
+    }
+  }
+}
+//max-width: 768px
+@mixin typography-md {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 32px;
+
+    h2._sm{
+      font-size: 28px;
+    }
+  }
+  h4{
+    font-size: 20px;
+    &._sm{
+      font-size: 22px;
+    }
+  }
+}
+//max-width: 560px
+@mixin typography-sm {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 32px;
+
+    &._sm{
+      font-size: 24px;
+    }
+  }
+  p{
+    font-size: 14px;
+
+    &._lg{
+      font-size: 16px;
+    }
+
+    &._sm{
+      font-size: 14px;
+    }
+  }
+}
+//max-width: 460px
+@mixin typography-xsm {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+}

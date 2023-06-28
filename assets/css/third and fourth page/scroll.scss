@@ -1,0 +1,234 @@
+.scroll {
+    padding: 100px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+
+        &-tabs {
+            position: sticky;
+            top: 100px;
+            width: 270px;
+            padding: 16px;
+            background-color: $white-6;
+            border-radius: 8px;
+            align-self: flex-start;
+
+            h6 {
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            a {
+                display: block;
+                padding: 10px 20px;
+                border-radius: 8px;
+                color: $black;
+                line-height: 1.45em;
+
+                &.active {
+                    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.04);
+                    background: $white;
+                    color: #32327c;
+                }
+            }
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 30px;
+            width: calc(100% - 330px);
+            max-width: 770px;
+        }
+    }
+}
+
+.anchor {
+    position: relative;
+    top: -60px;
+}
+
+.scrollContent {
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+
+        &.list p {
+            color: $black-2;
+        }
+
+        p {
+            span {
+                padding-left: 1.5em;
+                display: block;
+            }
+        }
+    }
+}
+
+//max-width: 1160px
+@mixin scroll-xxl{
+    .scroll__inner-content{
+        gap: 25px;
+    }
+}
+
+
+//max-width: 1025px
+@mixin scroll-xl {
+    .scroll {
+        padding: 80px 0;
+
+        &__inner {
+            &-tabs {
+                width: 260px;
+            }
+
+            &-content{
+                width: calc(100% - 300px);
+                gap: 20px;
+            }
+        }
+
+        &Content {
+            &__header {
+                margin-bottom: 20px;
+                gap: 12px;
+            }
+        }
+    }
+}
+
+//max-width: 940px
+@mixin scroll-lg {
+    .scroll {
+        &__inner {
+            &-tabs {
+                width: 245px;
+            }
+
+            &-content{
+                width: calc(100% - 280px);
+            }
+        }
+
+        &Content {
+            &__header {
+                margin-bottom: 18px;
+                gap: 10px;
+            }
+
+            &__body {
+                p._lg {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+//max-width: 768px
+@mixin scroll-md {
+    .scroll {
+        padding: 60px 0;
+
+        &__inner {
+            &-tabs {
+                width: 230px;
+                padding: 12px;
+                border-radius: 6px;
+
+                a {
+                    padding: 9px 11px;
+                }
+            }
+
+            &-content{
+                width: calc(100% - 260px);
+                gap: 15px;
+            }
+        }
+
+        &Content {
+            &__header {
+                margin-bottom: 15px;
+                gap: 6px;
+            }
+
+            &__body {
+                p._lg {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+//max-width: 660px
+@mixin scroll-xmd {
+    .scroll {
+        padding: 40px 0;
+
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            &-tabs {
+                width: 100%;
+                padding: 12px;
+                border-radius: 6px;
+                position: static;
+
+                a {
+                    padding: 9px 11px;
+                }
+            }
+
+            &-content{
+                width: 100%;
+                padding-left: 0;
+                gap: 20px;
+            }
+        }
+
+        &Content {
+            &__header {
+                margin-bottom: 15px;
+                gap: 6px;
+            }
+        }
+    }
+}
+
+//max-width: 460px
+@mixin scroll-xsm {
+    .scroll {
+        &__inner {
+            gap: 20px;
+
+            &-content{
+                width: 100%;
+                gap: 15px;
+            }
+        }
+
+        &Content {
+            &__header {
+                margin-bottom: 10px;
+                gap: 6px;
+            }
+        }
+    }
+}

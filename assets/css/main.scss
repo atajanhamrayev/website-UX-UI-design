@@ -1,36 +1,27 @@
-@import "./components/0-main/variables.scss";
-@import "./components/0-main/nulifier.scss";
-@import "./components/0-main/typography.scss";
-@import "./components/0-main/header.scss";
-@import "./components/0-main/footer.scss";
-@import "./components/1-layout/components.scss";
+// 0-main
+@import "./0-main/variables.scss";
+@import "./0-main/nulifier.scss";
+@import "./0-main/typography.scss";
 
+//1-layout
+@import "./1-layout/components.scss";
+@import "./1-layout/header.scss";
+@import "./1-layout/footer.scss";
 
-// first page
-@import "./components/first\ page/index_hero.scss";
-@import "./components/first\ page/choose.scss";
-@import "./components/first\ page/do.scss";
-@import "./components/first\ page/invest.scss";
-@import "./components/first\ page/numslider.scss";
+//first page
+@import "./first\ page/hero.scss";
+@import "./first\ page/whyUs.scss";
+@import "./first\ page/grid.scss";
+@import "./first\ page/feedbacks.scss";
 
 //second page
-@import "./components/second\ page/about_hero.scss";
-@import "./components/second\ page/team.scss";
-@import "./components/second\ page/partners.scss";
-@import "./components/second\ page/history.scss";
-@import "./components/second\ page/overview.scss";
+@import "./second\ page/roadmap.scss";
+@import "./second\ page/overview.scss";
 
 
 //third page
-@import "./components/third\ page/achievement.scss";
-@import "./components/third\ page/investments.scss";
-@import "./components/third\ page/structure.scss";
-
-//fourth page
-@import "./components/fourth\ page/contact.scss";
-
-//fifth page
-@import "./components/fifth\ page/privacy.scss";
-
-// Responsive
-@import "./components/1-layout/responsive.scss";
+@import "./third\ and\ fourth\ page/heroTitle.scss";
+@import "./third\ and\ fourth\ page/map.scss";
+@import "./third\ and\ fourth\ page/scroll.scss";
+//responsive
+@import "./1-layout/responsive.scss";

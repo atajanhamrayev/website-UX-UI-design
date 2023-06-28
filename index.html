@@ -2,252 +2,245 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
     <link rel="stylesheet" href="./assets/css/main.css">
-
-    <title>Landing Page</title>
 </head>
 <body>
-    
-    <header class="header">
-        <div class="autoContainer">
-            <div class="header__inner">
-                <div class="header__inner-logo">
-                    <a href="#"><img src="./assets/images/yudaneru logo 1.svg" alt="Company Logo"></a>
-                </div>
-                <nav class="header__inner-navigation">
-                    <ul class="header__inner-nav-links">
-                        <li class="header__inner-nav-item active"><a class="active" href="#">Home</a></li>
-                        <li class="header__inner-nav-item"><a class="header__inner-nav-link" href="/about.html">About Us</a></li>
-                        <li class="header__inner-nav-item"><a class="header__inner-nav-link" href="/performance.html">Performance</a></li>
-                        <li class="header__inner-nav-item"><a class="header__inner-nav-link" href="/contact.html">Contact Us</a></li>
-                        <li class="header__inner-nav-item"><a class="header__inner-nav-link" href="/privacy.html">Privacy Policy</a></li>
-                    </ul>
-                    <div class="burger">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
+    <div class="main">
+        <header class="header">
+            <div class="autoContainer">
+                <div class="header__inner">
+                    <a class="logo" href="/">
+                        <img src="./assets/images/logo.png" alt="yudaneru">
+                    </a>
+                    <div class="nav">
+                        <div class="nav__inner">
+                            <div class="nav__inner-group">
+                                <a class="nav__inner-link active" href="/">Home</a>
+                                <a class="nav__inner-link" href="/about.html">About Us</a>
+                                <a class="nav__inner-link" href="/contact-us.html">Performance</a>
+                                <a class="nav__inner-link" href="/performance.html">Contact Us</a>
+                                <a class="nav__inner-link" href="/privacy-policy.html">Privacy Policy</a>
+                            </div>
+                            <div class="nav__inner-group">
+                                <div class="switchLang active">
+                                    <span>JP</span>
+                                    <div class="switchLang__label"></div>
+                                    <span>EN</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </nav>
-                <div class="header__inner-lang-changer">
-                    <span class="header__inner-lang active">JP</span>
-                        <label class="header__inner-lang-switch">
-                            <input type="checkbox" class="header__inner-lang-checkbox">
-                            <span class="header__inner-lang slider round"></span>
-                        </label>
-                    <span class="header__inner-lang">EN</span>
+                    <button class="burger"></button>
                 </div>
             </div>
-        </div>
-    </header>
-
-      <section class="hero">
-        <div class="autoContainer autoContainer--sm">
-            <div class="hero__inner">
-                <div class="hero__inner-content">
-                    <div class="hero__inner-subcontent">
-                        <h3 class="hero__inner-tag">FIND THE BEST PROPERTY</h3>
-                        <h1 class="hero__inner-title">Fully Invested<sup>SM</sup> in Better Outcomes</h1>
-                        <p class="hero__inner-p">As a global investment firm, we foster diverse perspectives and  embrace innovation 
-                        to help our clients navigate the uncertainty of  capital markets.</p>
+        </header>
+        <section class="hero">
+            <div class="autoContainer">
+                <div class="hero__inner">
+                    <div class="hero__inner-content">
+                        <strong>FIND THE BEST PROPERTY</strong>
+                        <h1>Fully InvestedSM in Better Outcomes</h1>
+                        <p>As a global investment firm, we foster diverse
+                             perspectives and embrace innovation to help our 
+                             clients navigate the uncertainty of capital markets.</p>
+                             <a class="button button--primary" href="/contact-us">Contact Us</a>
                     </div>
-                    <button class="button button-hero">Contact Us</button>
-                </div>
-                <div class="hero__inner-img">
-                    <img src="./assets/images/joel-filipe-RFDP7_80v5A-unsplash 1.svg" alt="content_img">
+                    <div class="hero__inner-banner">
+                        <div class="hero__banner">
+                            <img src="./assets/images/intro.png" alt="banner">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="choose">
-        <div class="autoContainer autoContainer--sm">
-            <div class="choose__inner">
-                <div class="choose__inner-images">
-                    <img class="choose__inner-img first" src="./assets/images/Rectangle 62 (1).svg" alt="images_first">
-                    <img class="choose__inner-img second" src="./assets/images/Rectangle 55.svg" alt="images_second">
-                    <img class="choose__inner-img third" src="./assets/images/Rectangle 62.svg" alt="images_third">
-                </div>
-                <div class="choose__inner-content">
-                    <div class="choose__inner-subcontent1">
+        </section>
+        <section class="whyUs">
+            <div class="autoContainer">
+                <div class="whyUs__inner">
+                    <div class="whyUs__inner-banner">
+                        <img src="./assets/images/chooseUs_banner.png" alt="Choose Us Banner">
+                    </div>
+                    <div class="whyUs__inner-content">
                         <h2>Why Choose Us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
-                        elit, sed a do eiusmod tempor incididunt ut labore
-                         et dolore magna  are aliqua. Ut enim ad minim 
-                         veniam, quis nos</p>
-                    </div>
-                    <div class="choose__inner-subcontent2">
-                        <div class="choose__inner-box box">
-                            <div class="choose__inner-box-icon icon"><img src="./assets/images/Rectangle 5192 (1).svg" alt="icon_1"></div>
-                            <div class="choose__inner-box-content">
-                                <h3 class="choose__inner-box-content-title">Principled/Trust</h3>
-                                <p class="choose__inner-box-content-p">Lorem ipsum dolor sit amet, consectetur 
-                                    adipiscing elit, sed a do eiusmod tempor incididunt </p>
-                            </div>
-                        </div>
-                        <div class="choose__inner-box box">
-                            <div class="choose__inner-box-icon icon"><img src="./assets/images/Rectangle 5192 (2).svg" alt="icon_2"></div>
-                            <div class="choose__inner-box-content">
-                                <h3 class="choose__inner-box-content-title">Tailored/Customized</h3>
-                                <p class="choose__inner-box-content-p">Lorem ipsum dolor sit amet, consectetur 
-                                    adipiscing elit, sed a do eiusmod tempor incididunt </p>
-                            </div>
-                        </div>
-                        <div class="choose__inner-box box">
-                            <div class="choose__inner-box-icon icon"><img src="./assets/images/Rectangle 5192 (3).svg" alt="icon_3"></div>
-                            <div class="choose__inner-box-content">
-                                <h3 class="choose__inner-box-content-title">Hungry/Ambitious</h3>
-                                <p class="choose__inner-box-content-p">Lorem ipsum dolor sit amet, consectetur 
-                                    adipiscing elit, sed a do eiusmod tempor incididunt </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="do">
-        <div class="autoContainer autoContainer--md">
-            <div class="do__inner">
-                <h2 class="do__inner-title">What We Do</h2>
-                <div class="do__inner-boxes">
-                    <div class="do__inner-box">
-                        <div class="do__inner-box-inner">
-                            <img src="./assets/images/Rectangle 5362.svg" alt="" class="do__inner-box-img">
-                            <div class="do__inner-box-content">
-                                <h3 class="do__inner-box-content-title">Individual Investor</h3>
-                                <p class="do__inner-box-content-p">With over 1 million+ homes for sale available on the website, Trulia can match you with a house.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="do__inner-box">
-                        <div class="do__inner-box-inner">
-                            <img src="./assets/images/Rectangle 5362 (1).svg" alt="" class="do__inner-box-img">
-                            <div class="do__inner-box-content">
-                                <h3 class="do__inner-box-content-title">Individual Investor</h3>
-                                <p class="do__inner-box-content-p">With over 1 million+ homes for sale available on the website, Trulia can match you with a house.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="do__inner-box">
-                        <div class="do__inner-box-inner">
-                            <img src="./assets/images/Rectangle 5362 (2).svg" alt="" class="do__inner-box-img">
-                            <div class="do__inner-box-content">
-                                <h3 class="do__inner-box-content-title">Individual Investor</h3>
-                                <p class="do__inner-box-content-p">With over 1 million+ homes for sale available on the website, Trulia can match you with a house.</p>
-                            </div>
-                        </div>
-                </div>
-        </div>
-    </section>
-
-    <section class="invest">
-        <div class="autoContainer autoContainer--sm">
-            <div class="invest__inner">
-                <h2 class="invest__inner-title">Ways to Invest</h2>
-                <div class="invest__inner-boxes">
-                    <div class="invest__inner-box">
-                        <div class="invest__inner-box-inner">
-                            <div class="invest__inner-box-content">
-                                <h3 class="invest__inner-box-content-title">Personal
-                                    Investment Account</h3>
-                                <p class="invest__inner-box-content-p">
-                                    Open a standard account and build a portfolio of alternative investments.
+                        <p>
+                            To achieve anything of significance there
+                             needs to be a reliance on something greater 
+                             than oneself, a team, one built on trust, flexibility 
+                             and relentlessness. 
+                        </p>
+                        <ul class="whyUs__list">
+                            <li class="whyUs__list-item">
+                                <div class="whyUs__list-item-icon">
+                                    <img src="./assets/images/illustrations/ChooseUs(1).png" alt="choose Us icon">
+                                </div>
+                                <h4 class="_sm">Principled</h4>
+                                <p>
+                                    Principles are the foundation of trust, nothing 
+                                    happens without it, the essence of who we are 
                                 </p>
-                            </div>
-                            <button class="invest__inner-box-button button">Contact Us</button>
-                        </div>
-                    </div>
-                    <div class="invest__inner-box">
-                        <div class="invest__inner-box-inner">
-                            <div class="invest__inner-box-content">
-                                <h3 class="invest__inner-box-content-title">Personal
-                                    Investment Account</h3>
-                                <p class="invest__inner-box-content-p">
-                                    Open a standard account and build a portfolio of alternative investments.
+                            </li>
+                            <li class="whyUs__list-item">
+                                <div class="whyUs__list-item-icon">
+                                    <img src="./assets/images/illustrations/ChooseUs (2).png" alt="choose Us icon">
+                                </div>
+                                <h4 class="_sm">Principled</h4>
+                                <p>
+                                    Principles are the foundation of trust, nothing 
+                                    happens without it, the essence of who we are 
                                 </p>
-                            </div>
-                            <button class="invest__inner-box-button button">Contact Us</button>
-                        </div>
-                    </div>
-                    <div class="invest__inner-box">
-                        <div class="invest__inner-box-inner">
-                            <div class="invest__inner-box-content">
-                                <h3 class="invest__inner-box-content-title">Personal
-                                    Investment Account</h3>
-                                <p class="invest__inner-box-content-p">
-                                    Open a standard account and build a portfolio of alternative investments.
+                            </li>
+                            <li class="whyUs__list-item">
+                                <div class="whyUs__list-item-icon">
+                                    <img src="./assets/images/illustrations/ChooseUs (3).png" alt="choose Us icon">
+                                </div>
+                                <h4 class="_sm">Principled</h4>
+                                <p>
+                                    Principles are the foundation of trust, nothing 
+                                    happens without it, the essence of who we are 
                                 </p>
-                            </div>
-                            <button class="invest__inner-box-button button">Contact Us</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="numslider">
-        <div class="autoContainer autoContanier--md">
-            <div class="numslider__inner">
-                <div class="numslider__inner-content">
-                    <h3>POWERING NEXT-GENERATION PORTFOLIOS</h3>
-                    <h1>1,769,369</h1>
-                    <p>people are using Yudaneru to start investing smarter</p>
-                </div>
-                <div class="numslider__inner-slider slider"></div>
-            </div>
-        </div>
-    </section>
-
-
-<footer>
-    <div class="footer">
-        <div class="autoContainer autoContainer--lg">
-            <div class="footer__inner">
-                <div class="footer__inner-logoGroup">
-                    <img src="./assets/images/yudaneru logo 1 (1).svg" alt="footer_logo" class="footer__inner-logoGroup-logo">
-                    <div class="footer__inner-logoGroup-content">
-                        <h4>Office Headquaters</h4>
-                        <p>Balboa Park,	San Diego, California, 	92104, 	United States</p>
-                    </div>
-                </div>
-                <div class="footer__inner-group">
-                    <div class="footer__inner-group-companyGroup">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Performance</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            </li>
                         </ul>
                     </div>
-                    <div class="footer__inner-group-aboutGroup">
-                        <h4>About Us</h4>
-                        <p>We are the real estate agency in Sydney, with agents available to answer any question 24/7.</p>
-                        <div class="footer__inner-group-aboutGroup-social-icons">
-                                <ul>
-                                    <li><a href=""><img src="./assets/icons/Vector (3).svg" alt="Twitter Icon"></a></li>
-                                    <li><a href=""><img src="./assets/icons/Vector (4).svg" alt="facebook Icon"></a></li>
-                                    <li><a href=""><img src="./assets/icons/Subtract (1).svg" alt="Instagram Icon"></a></li>
-                                    <li><a href=""><img src="./assets/icons/Vector (5).svg" alt="M Icon"></a></li>
-                                </ul>
+                </div>
+            </div>
+        </section>
+        <section class="grid grid--service">
+            <div class="autoContainer">
+                <div class="grid__inner">
+                    <h2>What We Do</h2>
+                    <div class="grid__inner-row">
+                        <div class="gridItem">
+                            <div class="gridItem__image">
+                                <img src="./assets/images/illustrations/service-1.png">
                             </div>
+                            <div class="gridItem__info">
+                                <h4>Investment Professional</h4>
+                                <p>
+                                    With over 1 million+ homes for sale 
+                                    available on the website, Trulia can match 
+                                    you with a house.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="gridItem">
+                            <div class="gridItem__image">
+                                <img src="./assets/images/illustrations/service-2.png" alt="">
+                            </div>
+                            <div class="gridItem__info">
+                                <h4>Individual Investor</h4>
+                                <p>
+                                    With over 1 million+ homes for sale 
+                                    available on the website, Trulia can match 
+                                    you with a house.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="gridItem">
+                            <div class="gridItem__image">
+                                <img src="./assets/images/illustrations/service-3.png" alt="">
+                            </div>
+                            <div class="gridItem__info">
+                                <h4>Institutions & Consultants</h4>
+                                <p>
+                                    With over 1 million+ homes for sale 
+                                    available on the website, Trulia can match 
+                                    you with a house.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="grid grid--invest">
+            <div class="autoContainer">
+                <div class="grid__inner">
+                    <h2>Ways to Invest</h2>
+                    <div class="grid__inner-row">
+                        <div class="gridItem">
+                            <h4>
+                                Personal <br>
+                                Investment Account
+                            </h4>
+                            <p>
+                                In a competitive market, we remained 
+                                focused on the ‘diamonds in the rough’.
+                            </p>
+                        </div>
+                        <div class="gridItem">
+                            <h4>
+                                Personal <br>
+                                Investment Account
+                            </h4>
+                            <p>
+                                In a competitive market, we remained 
+                                focused on the ‘diamonds in the rough’.
+                            </p>
+                        </div>
+                        <div class="gridItem">
+                            <h4>
+                                Personal <br>
+                                Investment Account
+                            </h4>
+                            <p>
+                                In a competitive market, we remained 
+                                focused on the ‘diamonds in the rough’.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feedbacks">
+            <div class="autoContainer">
+                <div class="feedbacks__inner">
+                    <div class="feedbacks__slider">
+                        <div class="feedbacks__slider-item">
+                            <p>
+                                Lorem ipsum dolor sit amet. Est sequi
+                                 debitis id asperiores ullam et libero
+                                  corporis id blanditiis sequi a 
+                                  possimus voluptas vel dolorem quia 
+                                  eum quam voluptates.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="autoContainer">
+                <div class="footer__inner">
+                    <div class="footer__inner-info">
+                        <div class="logo">
+                            <img src="./assets/images/logolight.png" alt="yudaneru">
+                        </div>
+                        <div class="footer__inner-info-group">
+                            <h6>Office Headquaters</h6>
+                            <p class="_sm">Balboa Park,	San Diego, California, 	92104, 	United States</p>
+                        </div>
+                    </div>
+                    <div class="footer__inner-links">
+                        <div class="footer__inner-links-column">
+                            <h6>Company</h6>
+                            <a href="/" class="footer__inner-link">Home</a>
+                            <a href="/about.html" class="footer__inner-link">About Us</a>
+                            <a href="/performance.html" class="footer__inner-link">Performance</a>
+                            <a href="/contact-us.html" class="footer__inner-link">Contact</a>
+                        </div>
+                    </div>
+                    <div class="footer__inner-social">
+                        <h6>About Us</h6>
+                        <p class="_sm">Licensed real estate asset manager in Japan, ready, capable and willing to serve</p>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <p class="_sm">All rights reserved by YUDANERU Inc. ©2023</p>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
     </div>
-    <div class="subfooter">
-        <h5>All rights reserved by ©Creative UI Design 2023.</h5>
-        <a href="#"><span>Privacy Policy</span></a>
-    </div>
-</footer>
-
-<script src="./assets/js/script.js"></script>
 </body>
 </html>
